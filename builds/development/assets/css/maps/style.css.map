@@ -1,0 +1,1 @@
+{"version":3,"sources":["style.scss"],"names":[],"mappings":"AAEA;CACC,sBAAqB;CACrB","file":"../style.css","sourcesContent":["@import 'mixins';\r\n\r\nbody{\r\n\tbackground-color: red;\r\n}"]}
