@@ -1,5 +1,108 @@
-body {
-	background-color: red;
+/* line 14, components/sass-bootstrap/mixins/_clearfix.scss */
+.wrapper:before, .wrapper:after {
+	content: " ";
+	display: table;
+}
+
+/* line 19, components/sass-bootstrap/mixins/_clearfix.scss */
+.wrapper:after {
+	clear: both;
+}
+
+/* line 8, components/sass/style.scss */
+.wrapper {
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+
+/* line 15, components/sass/style.scss */
+.wrapper > .inner-wrapper {
+	overflow: hidden;
+	height: auto;
+}
+
+/* line 20, components/sass/style.scss */
+.section {
+	height: 60px;
+}
+
+/* line 23, components/sass/style.scss */
+.section.darker {
+	background-color: #005984;
+}
+
+/* line 26, components/sass/style.scss */
+.section.dark {
+	background-color: #0073ae;
+}
+
+/* line 29, components/sass/style.scss */
+.section.pure {
+	background-color: #00a4e4;
+}
+
+/* line 32, components/sass/style.scss */
+.section.light {
+	background-color: #50c8e8;
+}
+
+/* line 35, components/sass/style.scss */
+.section.lighter {
+	background-color: #ade0ee;
+}
+
+/* line 38, components/sass/style.scss */
+.section.orange {
+	background-color: #e36f1e;
+}
+
+/* line 41, components/sass/style.scss */
+.section.green {
+	background-color: #78a22f;
+}
+
+/* line 44, components/sass/style.scss */
+.section.grape {
+	background-color: #00a4e4;
+}
+
+/* line 47, components/sass/style.scss */
+.section.red {
+	background-color: #c41c30;
+}
+
+/* line 50, components/sass/style.scss */
+.section.yellow {
+	background-color: #fdb913;
+}
+
+/* line 53, components/sass/style.scss */
+.section.black {
+	background-color: #000000;
+}
+
+/* line 56, components/sass/style.scss */
+.section.grey-11 {
+	background-color: #54565b;
+}
+
+/* line 59, components/sass/style.scss */
+.section.grey-9 {
+	background-color: #76777b;
+}
+
+/* line 62, components/sass/style.scss */
+.section.grey-6 {
+	background-color: #a8a8aa;
+}
+
+/* line 65, components/sass/style.scss */
+.section.grey-2 {
+	background-color: #d1d0ce;
 }
 
 /*# sourceMappingURL=maps/style.css.map */

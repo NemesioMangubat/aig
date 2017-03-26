@@ -1,5 +1,67 @@
-@import 'mixins';
+// Core variables and mixins
+@import "../sass-bootstrap/mixins";
+@import "customVariables";
 
-body{
-	background-color: red;
+.wrapper{
+	@include clearfix;
+}
+.wrapper{
+	display: block;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	> .inner-wrapper{
+		overflow: hidden;
+		height: auto;
+	}
+}
+.section{
+	height: 60px;
+}
+.section.darker{
+	background-color: $darker-blue;
+}
+.section.dark{
+	background-color: $dark-blue;
+}
+.section.pure{
+	background-color: $blue;
+}
+.section.light{
+	background-color: $light-blue;
+}
+.section.lighter{
+	background-color: $lighter-blue;
+}
+.section.orange{
+	background-color: $orange;
+}
+.section.green{
+	background-color: $green;
+}
+.section.grape{
+	background-color: $blue;
+}
+.section.red{
+	background-color: $red;
+}
+.section.yellow{
+	background-color: $yellow;
+}
+.section.black{
+	background-color: $black;
+}
+.section.grey-11{
+	background-color: $cool-grey-11;
+}
+.section.grey-9{
+	background-color: $cool-grey-9;
+}
+.section.grey-6{
+	background-color: $cool-grey-6;
+}
+.section.grey-2{
+	background-color: $cool-grey-2;
 }
