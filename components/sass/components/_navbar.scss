@@ -1,0 +1,58 @@
+.navbar-v1{
+    border: 0;
+    margin-bottom: 0;
+}
+.navbar-v1 .navbar-collapse {
+    border: 0;
+    box-shadow: none;
+}
+.navbar-v1 .navbar-right{
+    @media screen and (max-width : $screen-xs-max){
+        > li{
+            float: left;
+            width: 50%;
+        }
+    }
+}
+.navbar-v1 .navbar-nav-custom{
+    position: relative;
+    z-index: 1;
+    float: none;
+    margin: 0 -15px;
+    > li{
+        > a{
+            font-size: 17px;
+            font-weight: bold;
+            color: $dark-blue;
+        }
+    }
+    @media screen and (max-width : $screen-xs-max){
+        background-color: $light-blue;
+        > li{
+            > a{
+                color: #fff;
+            }
+        }
+    }
+    
+    
+    @media screen and (min-width : $screen-tablet){
+        > li{
+            width: 25%;
+        }
+        text-align: center;
+         &::before{
+            display: block;
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 10000px;
+            height: 100%;
+            background-color: #fff;
+             box-shadow: 0 0 3px rgba(0, 72, 100, 0.5);
+            pointer-events: none;
+            transform: translateX(-50%);
+        }
+    }
+}

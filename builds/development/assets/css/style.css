@@ -9,7 +9,7 @@
 	clear: both;
 }
 
-/* line 8, components/sass/style.scss */
+/* line 8, components/sass/base/_normalize_base.scss */
 .wrapper {
 	display: block;
 	width: 100%;
@@ -19,90 +19,165 @@
 	padding-right: 0 !important;
 }
 
-/* line 15, components/sass/style.scss */
+/* line 15, components/sass/base/_normalize_base.scss */
 .wrapper > .inner-wrapper {
 	overflow: hidden;
 	height: auto;
 }
 
-/* line 20, components/sass/style.scss */
+/* line 20, components/sass/base/_normalize_base.scss */
 .section {
 	height: 60px;
 }
 
-/* line 23, components/sass/style.scss */
+/* line 23, components/sass/base/_normalize_base.scss */
 .section.darker {
 	background-color: #005984;
 }
 
-/* line 26, components/sass/style.scss */
+/* line 26, components/sass/base/_normalize_base.scss */
 .section.dark {
 	background-color: #0073ae;
 }
 
-/* line 29, components/sass/style.scss */
+/* line 29, components/sass/base/_normalize_base.scss */
 .section.pure {
 	background-color: #00a4e4;
 }
 
-/* line 32, components/sass/style.scss */
+/* line 32, components/sass/base/_normalize_base.scss */
 .section.light {
 	background-color: #50c8e8;
 }
 
-/* line 35, components/sass/style.scss */
+/* line 35, components/sass/base/_normalize_base.scss */
 .section.lighter {
 	background-color: #ade0ee;
 }
 
-/* line 38, components/sass/style.scss */
+/* line 38, components/sass/base/_normalize_base.scss */
 .section.orange {
 	background-color: #e36f1e;
 }
 
-/* line 41, components/sass/style.scss */
+/* line 41, components/sass/base/_normalize_base.scss */
 .section.green {
 	background-color: #78a22f;
 }
 
-/* line 44, components/sass/style.scss */
+/* line 44, components/sass/base/_normalize_base.scss */
 .section.grape {
 	background-color: #00a4e4;
 }
 
-/* line 47, components/sass/style.scss */
+/* line 47, components/sass/base/_normalize_base.scss */
 .section.red {
 	background-color: #c41c30;
 }
 
-/* line 50, components/sass/style.scss */
+/* line 50, components/sass/base/_normalize_base.scss */
 .section.yellow {
 	background-color: #fdb913;
 }
 
-/* line 53, components/sass/style.scss */
+/* line 53, components/sass/base/_normalize_base.scss */
 .section.black {
 	background-color: #000000;
 }
 
-/* line 56, components/sass/style.scss */
+/* line 56, components/sass/base/_normalize_base.scss */
 .section.grey-11 {
 	background-color: #54565b;
 }
 
-/* line 59, components/sass/style.scss */
+/* line 59, components/sass/base/_normalize_base.scss */
 .section.grey-9 {
 	background-color: #76777b;
 }
 
-/* line 62, components/sass/style.scss */
+/* line 62, components/sass/base/_normalize_base.scss */
 .section.grey-6 {
 	background-color: #a8a8aa;
 }
 
-/* line 65, components/sass/style.scss */
+/* line 65, components/sass/base/_normalize_base.scss */
 .section.grey-2 {
 	background-color: #d1d0ce;
+}
+
+/* line 1, components/sass/components/_navbar.scss */
+.navbar-v1 {
+	border: 0;
+	margin-bottom: 0;
+}
+
+/* line 5, components/sass/components/_navbar.scss */
+.navbar-v1 .navbar-collapse {
+	border: 0;
+	-webkit-box-shadow: none;
+	        box-shadow: none;
+}
+
+@media screen and (max-width: 767px) {
+	/* line 11, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-right > li {
+		float: left;
+		width: 50%;
+	}
+}
+
+/* line 17, components/sass/components/_navbar.scss */
+.navbar-v1 .navbar-nav-custom {
+	position: relative;
+	z-index: 1;
+	float: none;
+	margin: 0 -15px;
+}
+
+/* line 23, components/sass/components/_navbar.scss */
+.navbar-v1 .navbar-nav-custom > li > a {
+	font-size: 17px;
+	font-weight: bold;
+	color: #0073ae;
+}
+
+@media screen and (max-width: 767px) {
+	/* line 17, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom {
+		background-color: #50c8e8;
+	}
+	/* line 32, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom > li > a {
+		color: #fff;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	/* line 17, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom {
+		text-align: center;
+	}
+	/* line 40, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom > li {
+		width: 25%;
+	}
+	/* line 44, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom::before {
+		display: block;
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		width: 10000px;
+		height: 100%;
+		background-color: #fff;
+		-webkit-box-shadow: 0 0 3px rgba(0, 72, 100, 0.5);
+		        box-shadow: 0 0 3px rgba(0, 72, 100, 0.5);
+		pointer-events: none;
+		-webkit-transform: translateX(-50%);
+		    -ms-transform: translateX(-50%);
+		        transform: translateX(-50%);
+	}
 }
 
 /*# sourceMappingURL=maps/style.css.map */

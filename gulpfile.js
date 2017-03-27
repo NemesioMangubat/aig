@@ -51,8 +51,8 @@ gulp.task('watch', function(){
 	browserSync.init({
         server: 'builds/development'
     });
-	gulp.watch(['components/sass/*.scss'], ['css']);
-	gulp.watch(['components/sass-bootstrap/*.scss'] ,['css-bootstrap']);
+	gulp.watch(['components/sass/**/*.scss'], ['css']);
+	gulp.watch(['components/sass-bootstrap/**/*.scss'] ,['css-bootstrap']);
 	gulp.watch('builds/development/**').on('change', browserSync.reload);
 });
 
