@@ -6,11 +6,50 @@
     border: 0;
     box-shadow: none;
 }
-.navbar-v1 .navbar-right{
+.navbar-v1{
     @media screen and (max-width : $screen-xs-max){
-        > li{
-            float: left;
-            width: 50%;
+        .navbar-nav{
+            > li{
+                > a{
+                    border-bottom: 1px solid $lighter-blue;
+                }
+            }
+        }
+        .navbar-nav{
+            &.navbar-right{
+                margin-top: 0px;
+                margin-bottom: 0px;
+                > li{
+                    &:nth-child(2n+1){
+                        > a{
+                            border-right: 1px solid $lighter-blue;
+                        }
+                    }
+                    &:first-child,
+                    &:nth-child(2){
+                        > a{
+                            border-top: 1px solid $lighter-blue;
+                        }
+                    }
+                    &:last-child{
+                        > a{
+                            border-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.navbar-v1{
+    @media screen and (max-width : $screen-xs-max){
+        .navbar-nav{
+            &.navbar-right{
+                > li{
+                    float: left;
+                    width: 50%;
+                }
+            }
         }
     }
 }
@@ -27,21 +66,39 @@
         }
     }
     @media screen and (max-width : $screen-xs-max){
-        background-color: $light-blue;
+        background-color: $light-blue; // temporary background-color
         > li{
             > a{
                 color: #fff;
+            }
+            &:first-child{
+                > a{
+                    border-top: 1px solid $lighter-blue;
+                }
             }
         }
     }
     
     
     @media screen and (min-width : $screen-tablet){
+        text-align: center;
         > li{
             width: 25%;
+            > a{
+                border-left: solid 1px $lighter-blue;
+            }
+            &:last-child{
+                > a{
+                    border-right: solid 1px $lighter-blue;
+                }
+            }
         }
-        text-align: center;
-         &::before{
+        
+        
+        
+        
+        
+        &::before{
             display: block;
             position: absolute;
             content: '';

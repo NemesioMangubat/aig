@@ -119,14 +119,38 @@
 }
 
 @media screen and (max-width: 767px) {
-	/* line 11, components/sass/components/_navbar.scss */
-	.navbar-v1 .navbar-right > li {
+	/* line 13, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav > li > a {
+		border-bottom: 1px solid #ade0ee;
+	}
+	/* line 19, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav.navbar-right {
+		margin-top: 0px;
+		margin-bottom: 0px;
+	}
+	/* line 24, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav.navbar-right > li:nth-child(2n+1) > a {
+		border-right: 1px solid #ade0ee;
+	}
+	/* line 30, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav.navbar-right > li:first-child > a, .navbar-v1 .navbar-nav.navbar-right > li:nth-child(2) > a {
+		border-top: 1px solid #ade0ee;
+	}
+	/* line 35, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav.navbar-right > li:last-child > a {
+		border-bottom: 0;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	/* line 48, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav.navbar-right > li {
 		float: left;
 		width: 50%;
 	}
 }
 
-/* line 17, components/sass/components/_navbar.scss */
+/* line 56, components/sass/components/_navbar.scss */
 .navbar-v1 .navbar-nav-custom {
 	position: relative;
 	z-index: 1;
@@ -134,7 +158,7 @@
 	margin: 0 -15px;
 }
 
-/* line 23, components/sass/components/_navbar.scss */
+/* line 62, components/sass/components/_navbar.scss */
 .navbar-v1 .navbar-nav-custom > li > a {
 	font-size: 17px;
 	font-weight: bold;
@@ -142,26 +166,38 @@
 }
 
 @media screen and (max-width: 767px) {
-	/* line 17, components/sass/components/_navbar.scss */
+	/* line 56, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom {
 		background-color: #50c8e8;
 	}
-	/* line 32, components/sass/components/_navbar.scss */
+	/* line 71, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li > a {
 		color: #fff;
+	}
+	/* line 75, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom > li:first-child > a {
+		border-top: 1px solid #ade0ee;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	/* line 17, components/sass/components/_navbar.scss */
+	/* line 56, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom {
 		text-align: center;
 	}
-	/* line 40, components/sass/components/_navbar.scss */
+	/* line 85, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li {
 		width: 25%;
 	}
-	/* line 44, components/sass/components/_navbar.scss */
+	/* line 87, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom > li > a {
+		border-left: solid 1px #ade0ee;
+	}
+	/* line 91, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-nav-custom > li:last-child > a {
+		border-right: solid 1px #ade0ee;
+	}
+	/* line 101, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom::before {
 		display: block;
 		position: absolute;

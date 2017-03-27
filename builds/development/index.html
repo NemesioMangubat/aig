@@ -109,6 +109,11 @@
     <!-- JS Page Level -->
     <script type="text/javascript">
         $(document).ready(function(){
+            
+            $('a[href="#"]').click(function(e){
+               e.preventDefault(); 
+            });
+            
             var $offset = $(".header-v1").outerHeight(false);
             $('body').css('padding-top', $offset);
         });
