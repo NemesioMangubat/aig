@@ -119,6 +119,18 @@
 }
 
 /* line 11, components/sass/components/_navbar.scss */
+.navbar-v1 .navbar-brand {
+	padding: 8px 0;
+}
+
+@media screen and (max-width: 767px) {
+	/* line 11, components/sass/components/_navbar.scss */
+	.navbar-v1 .navbar-brand {
+		padding: 8px 15px;
+	}
+}
+
+/* line 17, components/sass/components/_navbar.scss */
 .navbar-v1 .navbar-collapse {
 	border: 0;
 	-webkit-box-shadow: none;
@@ -126,38 +138,38 @@
 }
 
 @media screen and (max-width: 767px) {
-	/* line 19, components/sass/components/_navbar.scss */
+	/* line 25, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav > li > a {
 		border-bottom: 1px solid #ade0ee;
 	}
-	/* line 25, components/sass/components/_navbar.scss */
+	/* line 31, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav.navbar-right {
 		margin-top: 0px;
 		margin-bottom: 0px;
 	}
-	/* line 30, components/sass/components/_navbar.scss */
+	/* line 36, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav.navbar-right > li:nth-child(2n+1) > a {
 		border-right: 1px solid #ade0ee;
 	}
-	/* line 36, components/sass/components/_navbar.scss */
+	/* line 42, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav.navbar-right > li:first-child > a, .navbar-v1 .navbar-nav.navbar-right > li:nth-child(2) > a {
 		border-top: 1px solid #ade0ee;
 	}
-	/* line 41, components/sass/components/_navbar.scss */
+	/* line 47, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav.navbar-right > li:last-child > a {
 		border-bottom: 0;
 	}
 }
 
 @media screen and (max-width: 767px) {
-	/* line 54, components/sass/components/_navbar.scss */
+	/* line 60, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav.navbar-right > li {
 		float: left;
 		width: 50%;
 	}
 }
 
-/* line 62, components/sass/components/_navbar.scss */
+/* line 68, components/sass/components/_navbar.scss */
 .navbar-v1 .navbar-nav-custom {
 	position: relative;
 	z-index: 1;
@@ -166,30 +178,30 @@
 }
 
 @media screen and (max-width: 767px) {
-	/* line 62, components/sass/components/_navbar.scss */
+	/* line 68, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom {
 		background-color: #50c8e8;
 	}
-	/* line 70, components/sass/components/_navbar.scss */
+	/* line 76, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li > a {
 		color: #fff;
 	}
-	/* line 74, components/sass/components/_navbar.scss */
+	/* line 80, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li:first-child > a {
 		border-top: 1px solid #ade0ee;
 	}
 }
 
 @media screen and (min-width: 768px) {
-	/* line 62, components/sass/components/_navbar.scss */
+	/* line 68, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom {
 		text-align: center;
 	}
-	/* line 84, components/sass/components/_navbar.scss */
+	/* line 90, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li {
 		width: 25%;
 	}
-	/* line 86, components/sass/components/_navbar.scss */
+	/* line 92, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li > a {
 		position: relative;
 		z-index: 1;
@@ -198,24 +210,24 @@
 		color: #0073ae;
 		border-left: solid 1px #ade0ee;
 	}
-	/* line 93, components/sass/components/_navbar.scss */
+	/* line 99, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li > a:hover, .navbar-v1 .navbar-nav-custom > li > a:focus {
 		background-color: #00a4e4;
 	}
-	/* line 99, components/sass/components/_navbar.scss */
+	/* line 105, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li:last-child > a {
 		border-right: solid 1px #ade0ee;
 	}
-	/* line 107, components/sass/components/_navbar.scss */
+	/* line 113, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li.open > a {
 		background-color: #00a4e4 !important;
 		border-color: #ade0ee;
 	}
-	/* line 110, components/sass/components/_navbar.scss */
+	/* line 116, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li.open > a:hover, .navbar-v1 .navbar-nav-custom > li.open > a:focus {
 		background-color: #00a4e4 !important;
 	}
-	/* line 114, components/sass/components/_navbar.scss */
+	/* line 120, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom > li.open > a::before {
 		position: absolute;
 		content: '';
@@ -229,7 +241,7 @@
 		border-left: solid 5px #fff;
 		border-right: solid 5px #fff;
 	}
-	/* line 133, components/sass/components/_navbar.scss */
+	/* line 139, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom::before {
 		display: block;
 		position: absolute;
@@ -248,7 +260,7 @@
 	}
 }
 
-/* line 148, components/sass/components/_navbar.scss */
+/* line 154, components/sass/components/_navbar.scss */
 .dropdown-menu.animated {
 	/* Speed up animations */
 	-webkit-animation-duration: 0.55s;
@@ -257,12 +269,12 @@
 	animation-timing-function: ease;
 }
 
-/* line 158, components/sass/components/_navbar.scss */
+/* line 164, components/sass/components/_navbar.scss */
 .navbar-v1 .navbar-nav-custom .mega-dropdown {
 	position: static;
 }
 
-/* line 160, components/sass/components/_navbar.scss */
+/* line 166, components/sass/components/_navbar.scss */
 .navbar-v1 .navbar-nav-custom .mega-dropdown .dropdown-menu {
 	border: 0;
 	border-radius: 0;
@@ -274,14 +286,14 @@
 	padding: 0;
 }
 
-/* line 168, components/sass/components/_navbar.scss */
+/* line 174, components/sass/components/_navbar.scss */
 .navbar-v1 .navbar-nav-custom .mega-dropdown .dropdown-menu .mega-menu {
 	padding: 10px 0;
 	color: #fff;
 }
 
 @media screen and (min-width: 768px) {
-	/* line 168, components/sass/components/_navbar.scss */
+	/* line 174, components/sass/components/_navbar.scss */
 	.navbar-v1 .navbar-nav-custom .mega-dropdown .dropdown-menu .mega-menu {
 		padding: 30px 0;
 	}
