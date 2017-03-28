@@ -20,6 +20,7 @@
     <link rel="stylesheet" type="text/css" media="all" id="bootstrap" href="assets/plugins/bootstrap/css/bootstrap.css">
 
     <!-- CSS Implementing Plugins -->
+    <link rel="stylesheet" type="text/css" media="all" id="animate" href="assets/plugins/animate/animate.css">
 
     <!-- CSS Page Level -->
     <link rel="stylesheet" type="text/css" media="all" id="global" href="assets/css/style.css">
@@ -61,14 +62,26 @@
                 </ul>
                 <div class="clearfix"></div>
                 <ul class="nav navbar-nav navbar-nav-custom">
-                    <li><a href="#">採用情報</a></li>
-                    <li><a href="#">店舗・代理店検索</a></li>
-                    <li><a href="#">ヘルプ</a></li>
-                    <li class="dropdown">
+                    <li class="dropdown mega-dropdown">
                       <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li class="mega-menu">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="item">sdsd</div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">sdsd</div>
+                                    </div>
+                                    <div class="col-lg-3">
+                                        <div class="item">
+                                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Close<span class="caret"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
                       </ul>
                     </li>
                 </ul>
@@ -106,18 +119,25 @@
       
     <!-- JS Implementing Plugins -->
     
+    
     <!-- JS Page Level -->
     <script type="text/javascript">
+        
+        function debounce(b,d,a){var c;return function(){var h=this,g=arguments;var f=function(){c=null;if(!a){b.apply(h,g)}};var e=a&&!c;clearTimeout(c);c=setTimeout(f,d);if(e){b.apply(h,g)}}};
+        
         $(document).ready(function(){
             
             $('a[href="#"]').click(function(e){
                e.preventDefault(); 
-            });
+            }); 
             
-            var $offset = $(".header-v1").outerHeight(false);
-            $('body').css('padding-top', $offset);
+            jQuery(document).on('click', '.mega-dropdown', function(e) {
+              e.stopPropagation()
+            })
         });
+        
     </script>
+    <!--<script type="text/javascript" src="assets/plugins/bootstrapdropdown/dropdown.js"></script>-->
     <!--<script type="text/javascript" src="assets/js/app.js"></script>
     <script type="text/javascript">
       $(function() {
