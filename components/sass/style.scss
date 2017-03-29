@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 // Core variables and mixins
 @import "customVariables";
 @import "../sass-bootstrap/variables";
@@ -5,7 +7,11 @@
 // Base
 @import "base/normalize_base";
 
+// Core Css
+@import "components/type";
+
 // Components
 @import "components/navbar";
-
+@import "components/breadcrumbs";
+@import "components/footer";
 

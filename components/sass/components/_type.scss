@@ -1,0 +1,12 @@
+// prototype header
+h5{
+    &.footer-header{
+        font-size: $font-size-base + 2;
+        font-weight: 900;
+        margin-bottom: 30px;
+        @media screen and (max-width : $screen-xs-max){
+            border-bottom: solid 1px $cool-grey-6;
+            padding-bottom: $padding-base-horizontal;
+        }
+    }
+}

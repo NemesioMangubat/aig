@@ -27,82 +27,98 @@
 
 /* line 20, components/sass/base/_normalize_base.scss */
 .section {
-	height: 60px;
+	height: 600px;
+	margin-bottom: 100px;
 }
 
-/* line 23, components/sass/base/_normalize_base.scss */
+/* line 24, components/sass/base/_normalize_base.scss */
 .section.darker {
 	background-color: #005984;
 }
 
-/* line 26, components/sass/base/_normalize_base.scss */
+/* line 27, components/sass/base/_normalize_base.scss */
 .section.dark {
 	background-color: #0073ae;
 }
 
-/* line 29, components/sass/base/_normalize_base.scss */
+/* line 30, components/sass/base/_normalize_base.scss */
 .section.pure {
 	background-color: #00a4e4;
 }
 
-/* line 32, components/sass/base/_normalize_base.scss */
+/* line 33, components/sass/base/_normalize_base.scss */
 .section.light {
 	background-color: #50c8e8;
 }
 
-/* line 35, components/sass/base/_normalize_base.scss */
+/* line 36, components/sass/base/_normalize_base.scss */
 .section.lighter {
 	background-color: #ade0ee;
 }
 
-/* line 38, components/sass/base/_normalize_base.scss */
+/* line 39, components/sass/base/_normalize_base.scss */
 .section.orange {
 	background-color: #e36f1e;
 }
 
-/* line 41, components/sass/base/_normalize_base.scss */
+/* line 42, components/sass/base/_normalize_base.scss */
 .section.green {
 	background-color: #78a22f;
 }
 
-/* line 44, components/sass/base/_normalize_base.scss */
+/* line 45, components/sass/base/_normalize_base.scss */
 .section.grape {
 	background-color: #00a4e4;
 }
 
-/* line 47, components/sass/base/_normalize_base.scss */
+/* line 48, components/sass/base/_normalize_base.scss */
 .section.red {
 	background-color: #c41c30;
 }
 
-/* line 50, components/sass/base/_normalize_base.scss */
+/* line 51, components/sass/base/_normalize_base.scss */
 .section.yellow {
 	background-color: #fdb913;
 }
 
-/* line 53, components/sass/base/_normalize_base.scss */
+/* line 54, components/sass/base/_normalize_base.scss */
 .section.black {
 	background-color: #000000;
 }
 
-/* line 56, components/sass/base/_normalize_base.scss */
+/* line 57, components/sass/base/_normalize_base.scss */
 .section.grey-11 {
 	background-color: #54565b;
 }
 
-/* line 59, components/sass/base/_normalize_base.scss */
+/* line 60, components/sass/base/_normalize_base.scss */
 .section.grey-9 {
 	background-color: #76777b;
 }
 
-/* line 62, components/sass/base/_normalize_base.scss */
+/* line 63, components/sass/base/_normalize_base.scss */
 .section.grey-6 {
 	background-color: #a8a8aa;
 }
 
-/* line 65, components/sass/base/_normalize_base.scss */
+/* line 66, components/sass/base/_normalize_base.scss */
 .section.grey-2 {
 	background-color: #d1d0ce;
+}
+
+/* line 3, components/sass/components/_type.scss */
+h5.footer-header {
+	font-size: 16px;
+	font-weight: 900;
+	margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+	/* line 3, components/sass/components/_type.scss */
+	h5.footer-header {
+		border-bottom: solid 1px #a8a8aa;
+		padding-bottom: 12px;
+	}
 }
 
 @media screen and (max-width: 767px) {
@@ -297,6 +313,115 @@
 	.navbar-v1 .navbar-nav-custom .mega-dropdown .dropdown-menu .mega-menu {
 		padding: 30px 0;
 	}
+}
+
+/* line 5, components/sass/components/_breadcrumbs.scss */
+.breadcrumb-holder .breadcrumb {
+	margin-bottom: 0;
+	background-color: transparent;
+	border-radius: 0;
+}
+
+/* line 14, components/sass/components/_breadcrumbs.scss */
+.breadcrumb-holder .breadcrumb > li {
+	font-weight: bold;
+}
+
+/* line 16, components/sass/components/_breadcrumbs.scss */
+.breadcrumb-holder .breadcrumb > li > a {
+	color: #000000;
+}
+
+/* line 22, components/sass/components/_breadcrumbs.scss */
+.breadcrumb-holder .breadcrumb > .active {
+	color: #000000;
+}
+
+/* line 1, components/sass/components/_footer.scss */
+.footer-v2 {
+	border-top: solid 1px #d1d0ce;
+	border-bottom: solid 3px #00a4e4;
+	padding: 20px 0;
+}
+
+@media screen and (max-width: 767px) {
+	/* line 1, components/sass/components/_footer.scss */
+	.footer-v2 {
+		padding: 10px 0;
+	}
+}
+
+/* line 9, components/sass/components/_footer.scss */
+.footer-v3 {
+	padding: 30px 0 20px 0;
+	background-color: #f5f5f5;
+}
+
+@media screen and (max-width: 767px) {
+	/* line 9, components/sass/components/_footer.scss */
+	.footer-v3 {
+		padding: 10px 0;
+	}
+}
+
+/* line 16, components/sass/components/_footer.scss */
+.footer-copy {
+	padding: 10px 0;
+	background-color: #00a4e4;
+}
+
+/* line 19, components/sass/components/_footer.scss */
+.footer-copy .copy {
+	color: #fff;
+}
+
+@media screen and (max-width: 767px) {
+	/* line 24, components/sass/components/_footer.scss */
+	.footer-item ul {
+		text-align: center;
+	}
+}
+
+/* line 28, components/sass/components/_footer.scss */
+.footer-item ul > li {
+	display: block;
+}
+
+/* line 30, components/sass/components/_footer.scss */
+.footer-item ul > li + li {
+	margin-top: 10px;
+}
+
+/* line 33, components/sass/components/_footer.scss */
+.footer-item ul > li > a {
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* line 41, components/sass/components/_footer.scss */
+.footer-row-box {
+	margin-top: 20px;
+}
+
+/* line 43, components/sass/components/_footer.scss */
+.footer-row-box ul {
+	margin: 0 -15px;
+}
+
+/* line 45, components/sass/components/_footer.scss */
+.footer-row-box ul > li {
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 15px;
+	margin-bottom: 10px;
+}
+
+/* line 50, components/sass/components/_footer.scss */
+.footer-row-box ul > li > a {
+	font-size: 13px;
+	font-weight: bold;
+	color: #000000;
 }
 
 /*# sourceMappingURL=maps/style.css.map */
