@@ -1,4 +1,4 @@
 # aig
 
 
-I dont know the full name
+Full name is in Japanese
